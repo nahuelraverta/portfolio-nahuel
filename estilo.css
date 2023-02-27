@@ -195,6 +195,11 @@ html{
     position: relative;
     z-index: 10;
 }
+
+.button_cv{
+    text-decoration: none;
+}
+
 .sobremi button .overlay{
     position: absolute;
     top: 0;
@@ -212,6 +217,7 @@ html{
 .skills{
     background-color: #252A2E;
     color: #fff;
+    font-size: 20px;
     padding: 50px 20px;
 }
 .skills .contenido-seccion{
