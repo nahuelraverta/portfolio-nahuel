@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">NMR</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>Nahuel Martín Raverta</h1>
+            <h2>FullStack Developer</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/nahuel.raverta"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/naguraverta/?hl=af"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nahuel-martin-raverta-79b119187/"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/nahuelraverta"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nahuel.</span> Como desarrollador Fullstack he creado diversas paginas y plataformas webs
+                con el objetivo de aplicarme en cada sistema y lenguaje existente.</p>
+                <p>Comencé a adquirir mis conocimientos de programación a partir de la plataforma CODERHOUSE donde me
+                certifique en herramientas como <span>JavaScript, React JS, Desarrollo web (HTML, CSS,C++)</span>y manejo de
+                servidores de bases de datos <span>(MySql, MongoDB, MariaDB)</span>.
+                Actualmente estoy especificándome en las nuevas actualizaciones de lenguajes de programación siendo mis
+                próximos proyectos bajo los conceptos de <span>PYTHON</span> y <span>REACTJS</span>.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            23-03-1994
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +54 221 364-4151
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nahuelraverta@gmail.com
+                        </li>
+                        
+                        <li>
+                            <strong>Residencia</strong>
+                            La Plata, Buenos Aires, Argentina
+                        </li>
+                        <li>
+                            <strong>Cargo actual</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa fa-windows"></i>
+                            <span>WINDOWS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa fa-linux"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-unity"></i>
+                            <span>UNITY</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-sharp fa-solid fa-file-video"></i>
+                            <span>ADOBE</span>
+                            <span>PREMIER</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>FullStack Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>PYTHON</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React JS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Vegas PRO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adobe Premier</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Unity Developer</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación y certificaciones</h3>
+                    <div class="item izq">
+                        <h4>JavaScript</h4>
+                        <span class="casa">CODERHOUSE</span>
+                        <span class="fecha">Agosto 2022 - Octubre 2022</span>
+                        <p>Durante este programa intensivo, se focalizo en el estudio de las principales herramientas para
+                            la creación de aplicaciones y páginas web con base JavaScript.
+                            A la par se profundizo en el seguimiento de ciclos/iteraciones, objetos y arrays, DOM, Storage
+                            y JSON, manejo de librerías, Promises y Async, AJAX, Fetch, entre otros.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Programador Backend</h4>
+                        <span class="casa">CODERHOUSE</span>
+                        <span class="fecha">Enero 2023 - Actualmente</span>
+                        <p>Durante este programa intensivo, se focaliza en el estudio de las principales herramientas de BACKEND.</p>
+                        
+
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <div class="item der">
+                        <h4>Desarrollo Web</h4>
+                        <span class="casa">CODERHOUSE</span>
+                        <span class="fecha">Mayo 2022 - Agosto 2022</span>
+                        <p>Durante este programa intensivo, se focalizo en el estudio de las principales herramientas para
+                            la creación de aplicaciones y páginas web con base React JS.
+                            A la par se profundizo en el seguimiento de prototipado y conceptos básicos de HTML, CSS,
+                            CSS++, SASS, Frameworks (Bootstrap, Foundation, BULMA) e implementación de box
+                            modeling.</p>
+                        
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>React JS</h4>
+                        <span class="casa">CODERHOUSE</span>
+                        <span class="fecha">Octubre 2022 - Diciembre 2022</span>
+                        <p>Durante este programa intensivo, se focalizo en el estudio de las principales herramientas para
+                            la creación de aplicaciones y páginas web con base React JS.
+                            A la par se profundizo en el seguimiento de JSX y transpiling, componentes, consumo de
+                            APIs, Routing y navegación, Context, implementación de Firebase y distintas técnicas de
+                            rendering. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p1.png" alt="" href="">
+                    <a href="https://comiqueria-virtual.000webhostapp.com/index.html"><div class="overlay">
+                        <h3>COMIQUERIA VIRTUAL</h3>
+                        <p>HTML + CSS</p>
+                    </div></a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p2.jpg" alt="">
+                    <a href="https://github.com/nahuelraverta/project-store-download"><div class="overlay">
+                        <h3>REGISTRO DOBLAJE</h3>
+                        <p>PYTHON + MySQL</p>
+                    </div></a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p3.jpg" alt="">
+                    <a href="https://github.com/nahuelraverta/3ra-entrega---REACTJS"><div class="overlay">
+                        <h3>COMIX REACT</h3>
+                        <p>HTML + REACTJS</p>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Calle 40 223, La Plata (1900), Buenos Aires, Argentina
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +54 221 364-4151
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: nahuelraverta@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/nahuel.raverta"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/naguraverta/?hl=af"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nahuel-martin-raverta-79b119187/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/nahuelraverta"><i class="fa-brands fa-github"></i></a>
+       
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
